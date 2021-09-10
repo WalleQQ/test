@@ -1,0 +1,42 @@
+.promo {
+  background: linear-gradient(
+    0deg,
+    rgba(152, 195, 232, 0.2) 8.84%,
+    rgba(152, 195, 232, 0) 31.12%
+  );
+}
+
+.promo__wrapper {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 24px 190px 213px;
+  background: url("../img/Promo/illustration.svg") no-repeat 97% top;
+}
+
+.promo__title {
+  color: $basic-dark-blue;
+  margin: 0;
+  font-family: $font;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: 0.04em;
+  max-width: 510px;
+  padding-top: 101px;
+  margin-bottom: 32px;
+}
+
+.promo__content {
+  margin: 0;
+  color: $basic-dark-blue;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+  max-width: 445px;
+  margin-bottom: 76px;
+}
+
+.promo__button {
+  padding: 15px 48px;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+}

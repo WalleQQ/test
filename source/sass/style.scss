@@ -1,2 +1,25 @@
-// Global
-@import "blocks/test";
+// Global //
+
+@import "global/colors.scss";
+@import "global/content.scss";
+@import "global/fonts";
+@import "global/normalize";
+@import "global/viewport";
+@import "global/mixins";
+
+// Blocks //
+
+@import "blocks/page";
+@import "blocks/page-body";
+@import "blocks/wrapper";
+@import "blocks/main-nav";
+@import "blocks/promo";
+@import "blocks/button";
+@import "blocks/what-we-do";
+@import "blocks/our-client";
+@import "blocks/work-with-us";
+@import "blocks/page-footer";
+@import "blocks/contacts.scss";
+@import "blocks/copyright.scss";
+@import "blocks/about-us.scss";
+@import "blocks/follow-us";

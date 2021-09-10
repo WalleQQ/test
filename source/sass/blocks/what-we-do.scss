@@ -1,0 +1,103 @@
+.what-we-do__title {
+  margin: 0;
+  margin-top: 192px;
+  color: $special-dark-blue;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  max-width: 359px;
+}
+
+.what-we-do__list {
+  @include list-zeroing;
+  margin-top: -138px;
+  padding-left: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.what-we-do__item {
+  background-color: $basic-white;
+  max-width: 284px;
+  padding: 236px 48px 48px 48px;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+
+  &:last-child {
+    margin-bottom: 212px;
+  }
+
+  &--first {
+    grid-column: 1 / 2;
+    position: relative;
+    top: 56%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: url("../img/what-we-do/1.svg") no-repeat 64px 48px;
+    }
+  }
+
+  &--second {
+    position: relative;
+    background: url("../img/what-we-do/3.svg") no-repeat center -25px;
+    grid-column: 2 / -1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -25px;
+      left: 0;
+      background: url("../img/what-we-do/3.svg") no-repeat center top;
+    }
+  }
+
+  &--third {
+    position: relative;
+    grid-column: 2 / -1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: url("../img/what-we-do/2.svg") no-repeat 85px 49px;
+    }
+  }
+}
+
+.what-we-do__item-title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: $basic-dark-blue;
+}
+
+.what-we-do__item-content {
+  margin: 0;
+  margin-bottom: 31px;
+  color: $basic-dark-blue;
+  opacity: 0.6;
+}
+
+.what-we-do__item-button {
+  color: $basic-blue;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  padding-right: 48px;
+  background: url("../img/what-we-do/ic_arrow_forward.svg") no-repeat center
+    right;
+}

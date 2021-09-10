@@ -1,0 +1,22 @@
+@font-face {
+  font-display: swap;
+  font-family: "Galien";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Galien"),
+    url("../fonts/galien_regular.woff2"),
+    url("../fonts/galien_regular.woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gilroy"),
+    url("../fonts/gilroy-regular.woff2"),
+    url("../fonts/gilroy-regular.woff");
+}
+
+$font: "Galien";
+$main-font: "Gilroy";

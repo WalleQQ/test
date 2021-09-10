@@ -9,26 +9,24 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <div class="wrapper">
-        <h1 class="visually-hidden">Online store Afrianska</h1>
-        <nav class="main-nav">
-          <img
-            class="main-nav__logo"
-            src="img/logo.svg"
-            width="48"
-            height="48"
-            alt="Logo Afrianska"
-          />
-          <div class="main-nav__toggle">
-            <span class="main-nav__toggle-item"></span>
-            <span class="visually-hidden">Открыть меню</span>
-          </div>
-        </nav>
-      </div>
+      <h1 class="visually-hidden">Online store Afrianska</h1>
+      <nav class="main-nav">
+        <img
+          class="main-nav__logo"
+          src="img/logo.svg"
+          width="48"
+          height="48"
+          alt="Logo Afrianska"
+        />
+        <div class="main-nav__toggle">
+          <span class="main-nav__toggle-item"></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </div>
+      </nav>
     </header>
     <main class="page-main">
       <section class="promo">
-        <div class="wrapper">
+        <div class="promo__wrapper">
           <h2 class="promo__title">New Automation Tool for Your Home</h2>
           <p class="promo__content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
@@ -44,7 +42,7 @@
             What we do to help our client grow in digital era,
           </h2>
           <ul class="what-we-do__list">
-            <li class="what-we-do__item">
+            <li class="what-we-do__item what-we-do__item--first">
               <h3 class="what-we-do__item-title">
                 Make Your business To Be Better Famous In Internet
               </h3>
@@ -54,7 +52,7 @@
               </p>
               <a href="" class="what-we-do__item-button">Learn more</a>
             </li>
-            <li class="what-we-do__item">
+            <li class="what-we-do__item what-we-do__item--second">
               <h3 class="what-we-do__item-title">
                 Bring Technology To Your Comfrotable Home
               </h3>
@@ -64,7 +62,7 @@
               </p>
               <a href="" class="what-we-do__item-button">Learn more</a>
             </li>
-            <li class="what-we-do__item">
+            <li class="what-we-do__item what-we-do__item--third">
               <h3 class="what-we-do__item-title">
                 Build Your Digital Product That Suitable For Your Need
               </h3>
@@ -78,7 +76,7 @@
         </div>
       </section>
       <section class="our-client">
-        <div class="wrapper">
+        <div class="our-client__wrapper wrapper">
           <h2 class="our-client__title">Our Beloved Client</h2>
           <p class="our-client__content">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -87,7 +85,11 @@
           </p>
           <ul class="our-client__list">
             <li class="our-client__item">
-              <a href="#" class="our-client__item-link">LOGO CLIENT 1</a>
+              <a
+                href="#"
+                class="our-client__item-link our-client__item-link--current"
+                >LOGO CLIENT 1</a
+              >
             </li>
             <li class="our-client__item">
               <a href="#" class="our-client__item-link">LOGO CLIENT 2</a>
@@ -118,7 +120,7 @@
         </div>
       </section>
       <section class="work-with-us">
-        <div class="wrapper">
+        <div class="work-with-us__wrapper">
           <h2 class="work-with-us__title">Intersted to woek with our team?</h2>
           <p class="work-with-us__content">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -130,8 +132,8 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="contacts">
-        <div class="wrapper">
+      <div class="page-footer__wrapper">
+        <section class="contacts">
           <div class="contacts__logo-wrapper">
             <h3 class="contacts__logo-text">Afrianska</h3>
             <img
@@ -142,55 +144,60 @@
               alt="Logo Afrianska"
             />
           </div>
-          <div class="contacts__content">
-            <p class="contacts__content-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-            <a class="contacts-content-phone" href="tel:+6281273134321"
-              >+62-812-7313-4321</a
-            >
-            <a href="mailto:hello.afrian@gmail.com">hello.afrian@gmail.com</a>
-          </div>
-        </div>
-      </section>
-      <section class="about-us">
-        <div class="wrapper">
-          <h3 class="about-us__title">About US</h3>
-          <ul class="about-us__list">
-            <li class="about-us__item">
-              <a href="#" class="about-us__link">About</a>
+          <p class="contacts__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <a class="contacts__phone" href="tel:+6281273134321"
+            >+62-812-7313-4321</a
+          >
+          <a class="contacts__email" href="mailto:hello.afrian@gmail.com"
+            >hello.afrian@gmail.com</a
+          >
+        </section>
+        <section class="about-us">
+          <h3 class="about-us__title page-footer__title">About US</h3>
+          <ul class="about-us__list page-footer__list">
+            <li class="about-us__item page-footer__item">
+              <a href="#" class="about-us__link page-footer__link">About</a>
             </li>
-            <li class="about-us__item">
-              <a href="#" class="about-us__link">What We Do</a>
+            <li class="about-us__item page-footer__item">
+              <a href="#" class="about-us__link page-footer__link"
+                >What We Do</a
+              >
             </li>
-            <li class="about-us__item">
-              <a href="#" class="about-us__link">Project</a>
+            <li class="about-us__item page-footer__item">
+              <a href="#" class="about-us__link page-footer__link">Project</a>
             </li>
-            <li class="about-us__item">
-              <a href="#" class="about-us__link">How It Work With Us</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="follow-us">
-        <div class="wrapper">
-          <h3 class="follow-us__title">Follow US</h3>
-          <ul class="follow-us__list">
-            <li class="follow-us__item">
-              <a href="#" class="follow-us__link">Instagram</a>
-            </li>
-            <li class="follow-us__item">
-              <a href="#" class="follow-us__link">Facebook</a>
-            </li>
-            <li class="follow-us__item">
-              <a href="#" class="follow-us__link">LinkedIn</a>
-            </li>
-            <li class="follow-us__item">
-              <a href="#" class="follow-us__link">Youtube</a>
+            <li class="about-us__item page-footer__item">
+              <a href="#" class="about-us__link page-footer__link"
+                >How It Work With Us</a
+              >
             </li>
           </ul>
-        </div>
-      </section>
+        </section>
+        <section class="follow-us">
+          <h3 class="follow-us__title page-footer__title">Follow US</h3>
+          <ul class="follow-us__list page-footer__list">
+            <li class="follow-us__item page-footer__item">
+              <a href="#" class="follow-us__link page-footer__link"
+                >Instagram</a
+              >
+            </li>
+            <li class="follow-us__item page-footer__item">
+              <a href="#" class="follow-us__link page-footer__link">Facebook</a>
+            </li>
+            <li class="follow-us__item page-footer__item">
+              <a href="#" class="follow-us__link page-footer__link">LinkedIn</a>
+            </li>
+            <li class="follow-us__item page-footer__item">
+              <a href="#" class="follow-us__link page-footer__link">Youtube</a>
+            </li>
+          </ul>
+        </section>
+        <section class="copyright">
+          <p class="copyright__text">2019 © Afrianska. All rights reserved.</p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
