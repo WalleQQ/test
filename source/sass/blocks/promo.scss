@@ -12,6 +12,11 @@
   padding: 94px 213px 190px 213px;
   background: url("../img/Promo/illustration.svg") no-repeat 97% top;
 
+  @media (min-width: $tablet-width) and (max-width: 1365px) {
+    background-position: 97% 52%;
+    background-size: 45%;
+  }
+
   @media (max-width: $tablet-width) {
     width: 688px;
     padding: 70px 40px 170px 40px;
@@ -40,6 +45,7 @@
   margin-bottom: 32px;
 
   @media (max-width: $mobile-width) {
+    max-width: 300px;
     font-size: 35px;
     line-height: 35px;
   }
@@ -54,6 +60,10 @@
   opacity: 0.6;
   max-width: 445px;
   margin-bottom: 76px;
+
+  @media (min-width: $tablet-width) and (max-width: 1365px) {
+    max-width: 347px;
+  }
 
   @media (max-width: $mobile-width) {
     font-size: 12px;
