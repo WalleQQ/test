@@ -10,6 +10,10 @@
   grid-template-columns: 232px 1fr;
   column-gap: 97px;
   row-gap: 111px;
+
+  @media (max-width: $tablet-width) {
+    row-gap: 100px;
+  }
 }
 
 .our-client__title {
@@ -57,6 +61,12 @@
     right: 0;
     background-color: $basic-blue;
   }
+
+  @media (max-width: $tablet-width) {
+    &::after {
+      width: 3px;
+    }
+  }
 }
 
 .our-client__item {
@@ -74,6 +84,10 @@
 
   &:last-child {
     background-color: $basic-dark-blue;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 187px;
   }
 }
 

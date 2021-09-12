@@ -7,10 +7,16 @@
 }
 
 .promo__wrapper {
-  max-width: 1130px;
+  max-width: 940px;
   margin: 0 auto;
-  padding: 0 24px 190px 213px;
+  padding: 101px 213px 190px 213px;
   background: url("../img/Promo/illustration.svg") no-repeat 97% top;
+
+  @media (max-width: $tablet-width) {
+    padding: 70px 156px 170px 156px;
+    background-position: 97% center;
+    background-size: 45%;
+  }
 }
 
 .promo__title {
@@ -21,7 +27,6 @@
   line-height: 74px;
   letter-spacing: 0.04em;
   max-width: 510px;
-  padding-top: 101px;
   margin-bottom: 32px;
 }
 

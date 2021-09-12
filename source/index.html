@@ -11,13 +11,15 @@
     <header class="page-header">
       <h1 class="visually-hidden">Online store Afrianska</h1>
       <nav class="main-nav">
-        <img
-          class="main-nav__logo"
-          src="img/logo.svg"
-          width="48"
-          height="48"
-          alt="Logo Afrianska"
-        />
+        <a class="main-nav__logo-link">
+          <img
+            class="main-nav__logo"
+            src="img/logo.svg"
+            width="48"
+            height="48"
+            alt="Logo Afrianska"
+          />
+        </a>
         <div class="main-nav__toggle">
           <span class="main-nav__toggle-item"></span>
           <span class="visually-hidden">Открыть меню</span>
@@ -25,7 +27,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="promo">
+      <section class="promo" id="about">
         <div class="promo__wrapper">
           <h2 class="promo__title">New Automation Tool for Your Home</h2>
           <p class="promo__content">
@@ -33,10 +35,10 @@
             tristique vulputate ultrices ut mauris tellus at. Posuere
             sollicitudin odio tellus elit.
           </p>
-          <a href="" class="promo__button button">See Our Project</a>
+          <a href="#" class="promo__button button">See Our Project</a>
         </div>
       </section>
-      <section class="what-we-do">
+      <section class="what-we-do" id="what-we-do">
         <div class="wrapper">
           <h2 class="what-we-do__title">
             What we do to help our client grow in digital era,
@@ -50,7 +52,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <a href="" class="what-we-do__item-button">Learn more</a>
+              <a href="#" class="what-we-do__item-button">Learn more</a>
             </li>
             <li class="what-we-do__item what-we-do__item--second">
               <h3 class="what-we-do__item-title">
@@ -60,7 +62,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <a href="" class="what-we-do__item-button">Learn more</a>
+              <a href="#" class="what-we-do__item-button">Learn more</a>
             </li>
             <li class="what-we-do__item what-we-do__item--third">
               <h3 class="what-we-do__item-title">
@@ -70,12 +72,12 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <a href="" class="what-we-do__item-button">Learn more</a>
+              <a href="#" class="what-we-do__item-button">Learn more</a>
             </li>
           </ul>
         </div>
       </section>
-      <section class="our-client">
+      <section class="our-client" id="project">
         <div class="our-client__wrapper wrapper">
           <h2 class="our-client__title">Our Beloved Client</h2>
           <p class="our-client__content">
@@ -119,7 +121,7 @@
           </ul>
         </div>
       </section>
-      <section class="work-with-us">
+      <section class="work-with-us" id="work-with-us">
         <div class="work-with-us__wrapper">
           <h2 class="work-with-us__title">Intersted to woek with our team?</h2>
           <p class="work-with-us__content">
@@ -127,14 +129,16 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
           </p>
-          <button class="work-with-us__button button">Let’s Talk</button>
+          <button class="work-with-us__button button button-open" type="button">
+            Let’s Talk
+          </button>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <section class="contacts">
-          <div class="contacts__logo-wrapper">
+          <a class="contacts__logo-link" href="#">
             <h3 class="contacts__logo-text">Afrianska</h3>
             <img
               class="contacts__logo"
@@ -143,7 +147,7 @@
               height="48"
               alt="Logo Afrianska"
             />
-          </div>
+          </a>
           <p class="contacts__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </p>
@@ -158,18 +162,22 @@
           <h3 class="about-us__title page-footer__title">About US</h3>
           <ul class="about-us__list page-footer__list">
             <li class="about-us__item page-footer__item">
-              <a href="#" class="about-us__link page-footer__link">About</a>
+              <a href="#about" class="about-us__link page-footer__link"
+                >About</a
+              >
             </li>
             <li class="about-us__item page-footer__item">
-              <a href="#" class="about-us__link page-footer__link"
+              <a href="#what-we-do" class="about-us__link page-footer__link"
                 >What We Do</a
               >
             </li>
             <li class="about-us__item page-footer__item">
-              <a href="#" class="about-us__link page-footer__link">Project</a>
+              <a href="#project" class="about-us__link page-footer__link"
+                >Project</a
+              >
             </li>
             <li class="about-us__item page-footer__item">
-              <a href="#" class="about-us__link page-footer__link"
+              <a href="#work-with-us" class="about-us__link page-footer__link"
                 >How It Work With Us</a
               >
             </li>
@@ -195,9 +203,49 @@
           </ul>
         </section>
         <section class="copyright">
+          <h3 class="visually-hidden">Авторское право</h3>
           <p class="copyright__text">2019 © Afrianska. All rights reserved.</p>
         </section>
       </div>
     </footer>
+    <section class="modal">
+      <form class="modal__login-form" method="get">
+      <div class="modal__wrapper">
+        <h3 class="modal__title">SEND US MESSAGE</h3>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <label class="modal__label" for="name">Full Name</label>
+            <input
+              class="modal__input modal__input--name"
+              type="text"
+              name="username"
+              id="name"
+            />
+          </li>
+          <li class="modal__item">
+            <label class="modal__label" for="email">Email</label>
+            <input class="modal__input" type="email" name="email" id="email" />
+          </li>
+          <li class="modal__item">
+            <label class="modal__label" for="textarea">Message</label>
+            <textarea
+              class="modal__input modal__input--textarea"
+              type="textarea"
+              name="textarea"
+              id="textarea"
+            ></textarea>
+          </li>
+        </ul>
+        <input class="modal__button button" type="submit" value="Submit" />
+      </div>
+      <div class="modal__button-close">
+        <span class="modal__button-close-item"></span>
+        <span class="visually-hidden">Закрыть меню</span>
+    </div>
+    </section>
+    <section class="modal-successfully">
+      <p class="modal-successfully__text">Your message successfully sent</p>
+    </section>
+    <script src="js/popup.js"></script>
   </body>
 </html>

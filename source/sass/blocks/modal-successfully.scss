@@ -1,0 +1,25 @@
+.modal-successfully {
+  display: none;
+  background-color: $basic-white;
+  width: 540px;
+  padding: 10px;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+}
+
+.modal-successfully__text {
+  color: $basic-dark-blue;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+}
+
+.modal-successfully__show {
+  display: block;
+}

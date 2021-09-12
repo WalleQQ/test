@@ -1,11 +1,22 @@
+.what-we-do {
+  padding: 192px 0 212px 0;
+
+  @media (max-width: $tablet-width) {
+    padding: 100px 0 100px 0;
+  }
+}
+
 .what-we-do__title {
   margin: 0;
-  margin-top: 192px;
   color: $special-dark-blue;
   font-size: 36px;
   line-height: 46px;
   letter-spacing: 0.05em;
   max-width: 359px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 100px;
+  }
 }
 
 .what-we-do__list {
@@ -15,6 +26,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+    padding: 0;
+  }
 }
 
 .what-we-do__item {
@@ -24,10 +40,6 @@
   box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px;
 
-  &:last-child {
-    margin-bottom: 212px;
-  }
-
   &--first {
     grid-column: 1 / 2;
     position: relative;
@@ -36,27 +48,28 @@
     &::before {
       content: "";
       position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: url("../img/what-we-do/1.svg") no-repeat 64px 48px;
+      width: 195px;
+      height: 132px;
+      top: 49px;
+      left: 43%;
+      transform: translateX(-50%);
+      background: url("../img/what-we-do/1.svg") no-repeat;
     }
   }
 
   &--second {
     position: relative;
-    background: url("../img/what-we-do/3.svg") no-repeat center -25px;
     grid-column: 2 / -1;
 
     &::before {
       content: "";
       position: absolute;
-      width: 100%;
-      height: 100%;
-      top: -25px;
-      left: 0;
-      background: url("../img/what-we-do/3.svg") no-repeat center top;
+      width: 254px;
+      height: 207px;
+      top: -23px;
+      left: 51%;
+      transform: translateX(-50%);
+      background: url("../img/what-we-do/3.svg") no-repeat;
     }
   }
 
@@ -67,11 +80,22 @@
     &::before {
       content: "";
       position: absolute;
-      width: 100%;
-      height: 100%;
+      width: 176px;
+      height: 131px;
+      top: 47px;
+      left: 46%;
+      transform: translateX(-50%);
+      background: url("../img/what-we-do/2.svg") no-repeat;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    &--first {
       top: 0;
-      left: 0;
-      background: url("../img/what-we-do/2.svg") no-repeat 85px 49px;
+    }
+
+    &--third {
+      grid-column: 1 / 2;
     }
   }
 }
@@ -100,4 +124,5 @@
   padding-right: 48px;
   background: url("../img/what-we-do/ic_arrow_forward.svg") no-repeat center
     right;
+  cursor: pointer;
 }
