@@ -1,9 +1,9 @@
 // Global //
 
+@import "global/normalize";
 @import "global/colors.scss";
 @import "global/content.scss";
 @import "global/fonts";
-@import "global/normalize";
 @import "global/viewport";
 @import "global/mixins";
 
@@ -23,3 +23,5 @@
 @import "blocks/copyright.scss";
 @import "blocks/about-us.scss";
 @import "blocks/follow-us";
+@import "blocks/modal";
+@import "blocks/modal-successfully";

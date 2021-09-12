@@ -2,4 +2,14 @@
   max-width: 940px;
   margin: 0 auto;
   padding: 0 213px;
+
+  @media (max-width: $tablet-width) {
+    width: 688px;
+    padding: 0 40px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 300px;
+    padding: 0 30px;
+  }
 }
