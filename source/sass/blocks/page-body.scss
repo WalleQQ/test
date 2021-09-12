@@ -8,6 +8,10 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+
+  @media (max-width: $mobile-width) {
+    font-size: 12px;
+  }
 }
 
 .page-body__no-scroll {

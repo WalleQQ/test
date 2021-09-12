@@ -22,6 +22,7 @@
   &::after {
     content: "";
     position: absolute;
+    z-index: 2;
     left: 0;
     bottom: 0;
     width: 1073px;
@@ -32,8 +33,20 @@
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr auto;
-    padding: 91px 40px 96px 40px;
+    padding: 91px 40px 50px 40px;
     width: 688px;
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    width: 300px;
+    padding: 91px 30px 50px 30px;
+    column-gap: 0;
+    border-radius: 0 100px 0 0;
   }
 }
 
@@ -46,6 +59,11 @@
   letter-spacing: 0.05em;
   max-width: 317px;
   color: $basic-white;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
 }
 
 .work-with-us__content {
@@ -54,6 +72,10 @@
   color: $basic-white;
   opacity: 0.6;
   max-width: 460px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .work-with-us__button {
@@ -61,4 +83,9 @@
   grid-row-start: 1;
   align-self: end;
   padding: 13px 74px;
+
+  @media (max-width: $mobile-width) {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
 }
