@@ -17,6 +17,11 @@
   grid-template-columns: min-content min-content min-content;
   align-items: start;
   column-gap: 47px;
+
+  @media (max-width: $tablet-width) {
+    width: 688px;
+    padding: 0 40px 50px 40px;
+  }
 }
 
 .page-footer__title {

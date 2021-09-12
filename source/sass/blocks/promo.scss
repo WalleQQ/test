@@ -13,8 +13,9 @@
   background: url("../img/Promo/illustration.svg") no-repeat 97% top;
 
   @media (max-width: $tablet-width) {
-    padding: 70px 156px 170px 156px;
-    background-position: 97% center;
+    width: 688px;
+    padding: 70px 40px 170px 40px;
+    background-position: 97% 52%;
     background-size: 45%;
   }
 }

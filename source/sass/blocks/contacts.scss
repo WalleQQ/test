@@ -1,6 +1,10 @@
 .contacts {
   width: 264px;
   margin-right: 88px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 39px;
+  }
 }
 
 .contacts__logo-link {

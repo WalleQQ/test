@@ -29,6 +29,12 @@
     background-color: $basic-white;
     opacity: 0.4;
   }
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr auto;
+    padding: 91px 40px 96px 40px;
+    width: 688px;
+  }
 }
 
 .work-with-us__title {
