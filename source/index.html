@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link  rel="stylesheet" href="css/style.min.css" />
     <title>Document</title>
   </head>
   <body class="page-body">
@@ -12,13 +12,13 @@
       <h1 class="visually-hidden">Online store Afrianska</h1>
       <nav class="main-nav">
         <a class="main-nav__logo-link">
-          <img
-            class="main-nav__logo"
-            src="img/logo.svg"
-            width="48"
-            height="48"
-            alt="Logo Afrianska"
-          />
+          <svg
+                  class="main-nav__logo"
+                  width="48"
+                  height="48"
+                >
+                  <use xlink:href="img/sprite.svg#logo"></use></svg
+              >
         </a>
         <div class="main-nav__toggle">
           <span class="main-nav__toggle-item"></span>
@@ -140,13 +140,13 @@
         <section class="contacts">
           <a class="contacts__logo-link" href="#">
             <h3 class="contacts__logo-text">Afrianska</h3>
-            <img
-              class="contacts__logo"
-              src="img/footer-logo.svg"
-              width="48"
-              height="48"
-              alt="Logo Afrianska"
-            />
+            <svg
+                  class="contacts__logo"
+                  width="48"
+                  height="48"
+                >
+                  <use xlink:href="img/sprite.svg#footer-logo"></use></svg
+              >
           </a>
           <p class="contacts__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -209,27 +209,27 @@
       </div>
     </footer>
     <section class="modal">
-      <form class="modal__login-form" method="get">
+      <form class="modal__login-form" method="get" id="form">
       <div class="modal__wrapper">
         <h3 class="modal__title">SEND US MESSAGE</h3>
         <ul class="modal__list">
           <li class="modal__item">
             <label class="modal__label" for="name">Full Name</label>
             <input
-              class="modal__input modal__input--name"
+              class="modal__input modal__input--name _req"
               type="text"
               name="username"
-              id="name"
+              id="username"
             />
           </li>
           <li class="modal__item">
             <label class="modal__label" for="email">Email</label>
-            <input class="modal__input" type="email" name="email" id="email" />
+            <input class="modal__input _req" type="email" name="email" id="email" />
           </li>
           <li class="modal__item">
             <label class="modal__label" for="textarea">Message</label>
             <textarea
-              class="modal__input modal__input--textarea"
+              class="modal__input modal__input--textarea _req"
               type="textarea"
               name="textarea"
               id="textarea"

@@ -2,11 +2,33 @@
   display: none;
   position: fixed;
   left: 52%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(90, 152, 208, 0.8) url("../img/modal/loading.gif") center
+      no-repeat;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.modal._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__input._error {
+  box-shadow: 0 0 15px $invalid-red;
 }
 
 .modal__wrapper {
   position: relative;
-  z-index: 20;
+  z-index: 2;
   background-color: $basic-white;
   box-sizing: border-box;
   width: 540px;
@@ -77,6 +99,7 @@
 
 .modal__button-close {
   position: absolute;
+  z-index: 3;
   top: 25px;
   right: 32px;
   cursor: pointer;

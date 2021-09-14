@@ -82,19 +82,11 @@
   }
 
   @media (min-width: $tablet-width) and (max-width: 1365px) {
+    max-width: 632px;
+
     &::after {
       width: 5px;
     }
-  }
-
-  @media (max-width: $tablet-width) {
-    &::after {
-      width: 3px;
-    }
-  }
-
-  @media (min-width: $desktop-width) and (max-width: 1365px) {
-    max-width: 632px;
   }
 
   @media (min-width: $mobile-width) and (max-width: 767px) {
@@ -128,7 +120,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 149px;
+    width: 150px;
   }
 }
 
