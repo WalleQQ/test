@@ -1,7 +1,8 @@
 .modal {
   display: none;
   position: fixed;
-  left: 52%;
+  left: 50%;
+  transform: translateX(-50%);
 
   &::after {
     content: "";
@@ -15,6 +16,12 @@
     opacity: 0;
     visibility: hidden;
   }
+
+  @media (max-width: $mobile-width) {
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .modal._sending::after {
@@ -23,7 +30,7 @@
 }
 
 .modal__input._error {
-  box-shadow: 0 0 15px $invalid-red;
+  box-shadow: inset 0 0 0 2px $invalid-red;
 }
 
 .modal__wrapper {
@@ -34,6 +41,16 @@
   width: 540px;
   padding: 56px;
   border-radius: 10px;
+
+  @media (max-width: $tablet-width) {
+    padding: 30px;
+    width: 350px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 15px;
+    width: 100%;
+  }
 }
 
 .modal__title {
@@ -43,6 +60,17 @@
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.04em;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
 }
 
 .modal__list {
@@ -58,7 +86,17 @@
   }
 
   &:last-child {
-    margin-bottom: 72px;
+    margin-bottom: 52px;
+  }
+
+  @media (max-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -84,13 +122,30 @@
 
   &--textarea {
     resize: none;
-    height: 144px;
+    height: 130px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 15px 30px;
+
+    &--name {
+      padding: 15px 30px;
+    }
+
+    &--textarea {
+      resize: none;
+      height: 100px;
+    }
   }
 }
 
 .modal__button {
   padding: 23px 185px;
   box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+
+  @media (max-width: $tablet-width) {
+    padding: 15px 118px;
+  }
 }
 
 .modal--show {
@@ -107,6 +162,13 @@
   border: none;
   width: 25px;
   height: 25px;
+
+  @media (max-width: $mobile-width) {
+    top: 10px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .modal__button-close-item {
@@ -125,5 +187,15 @@
     height: 2px;
     background-color: $basic-dark-blue;
     transform: rotate(90deg);
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 15px;
+    height: 2px;
+
+    &::before {
+      width: 15px;
+      height: 2px;
+    }
   }
 }

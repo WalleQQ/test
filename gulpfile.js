@@ -8,7 +8,7 @@ const sync = require("browser-sync").create();
 const htmlmin = require("gulp-htmlmin");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
-// const jsmin = require("gulp-jsmin");
+const jsmin = require("gulp-jsmin");
 const squoosh = require("gulp-libsquoosh");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
@@ -41,17 +41,16 @@ const html = () => {
 
 exports.html = html;
 
-// //Scripts
+//Scripts
 
-// const scripts = () => {
-//   return gulp
-//     .src("source/**/*.js")
-//     .pipe(jsmin())
-//     .pipe(rename({ suffix: ".min" }))
-//     .pipe(gulp.dest("build"));
-// };
-
-// exports.scripts = scripts;
+const scripts = () => {
+  return gulp
+    .src("source/**/*.js")
+    .pipe(jsmin())
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(gulp.dest("build"));
+};
+exports.scripts = scripts;
 
 //Images
 
@@ -144,7 +143,7 @@ const build = gulp.series(
   clean,
   copy,
   optimizeImages,
-  gulp.parallel(styles, html, sprite)
+  gulp.parallel(styles, html, scripts, sprite)
 );
 
 exports.build = build;
@@ -155,6 +154,6 @@ exports.default = gulp.series(
   clean,
   copy,
   copyImages,
-  gulp.parallel(styles, html, sprite),
+  gulp.parallel(styles, html, scripts, sprite),
   gulp.series(server, watcher)
 );
