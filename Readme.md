@@ -33,4 +33,5 @@
 ### Для установки
   
 npm install
+
 npm run start
